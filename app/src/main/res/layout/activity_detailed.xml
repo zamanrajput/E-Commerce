@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/iVD"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_180sdp" />
+
+
+    <TextView
+        android:id="@+id/titleTV"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:autofillHints="Name"
+        android:textSize="@dimen/_14sdp"
+        android:fontFamily="@font/poppins"
+        android:gravity="center_vertical"
+        android:hint="title here"
+        android:inputType="text"
+        android:soundEffectsEnabled="true"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/descriptionTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:autofillHints="Name"
+        android:fontFamily="@font/poppins"
+        android:gravity="start"
+        android:textSize="@dimen/_13sdp"
+        android:hint="@string/description"
+        android:inputType="textMultiLine"
+        android:soundEffectsEnabled="true"
+        android:textColor="@color/black" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <TextView
+            android:id="@+id/priceTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:autofillHints="Name"
+            android:fontFamily="@font/poppins"
+            android:hint="@string/price"
+            android:textSize="@dimen/_14sdp"
+
+            android:inputType="numberSigned|numberDecimal"
+            android:soundEffectsEnabled="true"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/brandTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:autofillHints="Name"
+            android:fontFamily="@font/poppins"
+            android:hint="@string/brand"
+            android:textSize="@dimen/_13sdp"
+            android:inputType="text"
+            android:soundEffectsEnabled="true"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/ratingTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:autofillHints="Name"
+            android:fontFamily="@font/poppins"
+            android:hint="@string/rating"
+            android:textSize="@dimen/_13sdp"
+            android:inputType="numberDecimal"
+            android:soundEffectsEnabled="true"
+            android:textColor="#000000" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:background="@drawable/button_bg"
+        android:text="go back"
+        android:textColor="@color/white" />
+
+</LinearLayout>

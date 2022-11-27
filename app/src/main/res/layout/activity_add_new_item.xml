@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F9FF"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/uploadIMG"
+        android:layout_width="@dimen/_130sdp"
+        android:layout_height="@dimen/_130sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:src="@drawable/upload"
+        app:civ_border_color="#000000"
+        app:civ_border_width="1sp" />
+
+
+    <EditText
+        android:id="@+id/titleDET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:autofillHints="Name"
+        android:fontFamily="@font/poppins"
+        android:hint="title here"
+        android:inputType="text"
+        android:soundEffectsEnabled="true"
+        android:textColor="@color/black"
+        android:textColorHint="#84090909" />
+
+    <EditText
+        android:id="@+id/descriptionDET"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_120sdp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:autofillHints="Name"
+        android:fontFamily="@font/poppins"
+        android:gravity="start"
+        android:hint="@string/description"
+        android:inputType="textMultiLine"
+        android:soundEffectsEnabled="true"
+        android:textColor="@color/black"
+        android:textColorHint="#84090909" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <EditText
+            android:id="@+id/priceDET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:autofillHints="Name"
+            android:fontFamily="@font/poppins"
+            android:hint="@string/price"
+            android:inputType="number"
+            android:soundEffectsEnabled="true"
+            android:textColor="@color/black"
+            android:textColorHint="#84090909" />
+
+        <EditText
+            android:id="@+id/brandDET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:autofillHints="Name"
+            android:fontFamily="@font/poppins"
+            android:hint="@string/brand"
+            android:inputType="text"
+            android:soundEffectsEnabled="true"
+            android:textColor="@color/black"
+            android:textColorHint="#84090909" />
+
+        <EditText
+            android:id="@+id/ratingDET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:autofillHints="Name"
+            android:fontFamily="@font/poppins"
+            android:hint="@string/rating"
+            android:inputType="numberDecimal"
+            android:soundEffectsEnabled="true"
+            android:textColor="@color/black"
+            android:textColorHint="#84090909" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/saveBTN"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:background="@drawable/button_bg"
+        android:text="save"
+        android:textColor="@color/white" />
+
+</LinearLayout>

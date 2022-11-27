@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_2sdp"
+    app:cardBackgroundColor="@color/white"
+    app:cardElevation="@dimen/_1sdp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_4sdp"
+        android:weightSum="3">
+
+        <ImageView
+            android:id="@+id/thumbnailARL"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_weight="1.2"
+            android:src="@drawable/shopping_bag" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/titleARL"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/_4sdp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:text="title"
+                android:textColor="@color/black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+
+                    android:id="@+id/brandARL"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/_4sdp"
+                    android:layout_weight="1.4"
+                    android:fontFamily="@font/poppins"
+                    android:gravity="center_vertical"
+                    android:text="Rs:3000"
+                    android:textColor="@color/primary_blue_dark" />
+
+                <TextView
+                    android:id="@+id/priceARL"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/_4sdp"
+                    android:layout_weight="0.6"
+                    android:fontFamily="@font/poppins"
+                    android:gravity="center_vertical"
+                    android:text="@string/rs_3000"
+                    android:textColor="@color/primary_blue_dark" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/buyCheckOutItem"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_bg_buy"
+                android:fontFamily="@font/poppins"
+                android:text="buy"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/removeCheckOutItem"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_weight="1"
+                android:background="@drawable/button_bg_cancle"
+                android:fontFamily="@font/poppins"
+                android:text="remove"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

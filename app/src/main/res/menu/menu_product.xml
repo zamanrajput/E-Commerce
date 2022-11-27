@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        app:showAsAction="always"
+        android:icon="@drawable/cart_checkout_ico"
+        android:id="@+id/checkoutOpen"
+        android:title="@string/check_out" />
+    <item
+        android:icon="@drawable/user_icon"
+        app:showAsAction="always"
+        android:id="@+id/profile"
+        android:title="@string/profile" />
+    <item
+        app:showAsAction="always"
+        android:icon="@drawable/logout_ico"
+        android:id="@+id/logOut"
+        android:title="Log Out" />
+</menu>
